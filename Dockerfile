@@ -128,6 +128,7 @@ COPY nginx.vh.default.conf /etc/nginx/conf.d/default.conf
 
 WORKDIR /static
 COPY x1v1 x1v1/
+COPY js js/
 RUN chown nginx:nginx x1v1
 
 EXPOSE 80
